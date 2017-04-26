@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="../../../pages/common/taglibs.jsp"%>
+<%@ include file="../../../pages/common/taglibs.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,39 +36,65 @@
 
 <body>
 <div class="container" style="width:100%;">
-        <div class="col-md-4 col-md-offset-4">
-            <div class="login-panel panel_new">
-                <div class="panel-heading_new">
-                    <h3 class="panel-title_new">Welcome</h3>
-                </div>
-                <div class="panel-body">
-                    <form role="form">
-                        <fieldset>
-                            <div class="form-group">
-                                <input class="form-control_new" placeholder="E-mail" name="email" type="email" autofocus>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control_new" placeholder="Password" name="password" type="password" value="">
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input name="remember" type="checkbox" value="Remember Me">Remember Me
-                                </label>
-                            </div>
-                            <!-- Change this to a button or input when using this as a form -->
-                            <div class="checkbox">
-                                 <a href="#" class="btn btn-lg btn-success btn-block">Login</a>
-                            </div>
-                            <div class="checkbox">
-                                <a href="#">Forget password ?</a>
-                                <a href="#" style="float: right">Sign in</a>
-                            </div>
+    <div class="col-md-4 col-md-offset-4">
+        <div class="login-panel panel_new">
+            <div class="panel-heading_new">
+                <h3 class="panel-title_new">Welcome</h3>
+            </div>
+            <div class="panel-body">
+                <form role="form">
+                    <fieldset>
+                        <div class="form-group">
+                            <input class="form-control_new" placeholder="E-mail" name="email" type="email" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control_new" placeholder="Password" name="password" type="password"
+                                   value="">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                            </label>
+                        </div>
+                        <!-- Change this to a button or input when using this as a form -->
+                        <div class="checkbox">
+                            <a href="#" class="btn btn-lg btn-success btn-block">Login</a>
+                        </div>
+                        <div class="checkbox">
+                            <a href="#">Forget password ?</a>
+                            <a href="#" style="float: right" data-toggle="modal" data-target="#myModal">Sign in</a>
+                        </div>
 
-                        </fieldset>
-                    </form>
-                </div>
+                    </fieldset>
+                </form>
             </div>
         </div>
+    </div>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        模态框（Modal）标题
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    在这里添加一些文本
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        提交更改
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
 </div>
 
 <!-- jQuery -->
