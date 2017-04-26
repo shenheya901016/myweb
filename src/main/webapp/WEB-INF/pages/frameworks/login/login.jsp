@@ -36,11 +36,10 @@
 
 <body>
 <div class="container" style="width:100%;">
-        <div class="col-md-4 col-md-offset-4" style="">
-
+        <div class="col-md-4 col-md-offset-4">
             <div class="login-panel panel_new">
                 <div class="panel-heading_new">
-                    <h3 class="panel-title_new">Please Sign In</h3>
+                    <h3 class="panel-title_new">Welcome</h3>
                 </div>
                 <div class="panel-body">
                     <form role="form">
@@ -61,7 +60,8 @@
                                  <a href="#" class="btn btn-lg btn-success btn-block">Login</a>
                             </div>
                             <div class="checkbox">
-                                <a href="#" class="">Forget password ?</a>
+                                <a href="#">Forget password ?</a>
+                                <a href="#" style="float: right">Sign in</a>
                             </div>
 
                         </fieldset>
